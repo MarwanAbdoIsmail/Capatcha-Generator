@@ -1,0 +1,76 @@
+.wrapper {
+  background-color: #19172e;
+}
+
+.text-main {
+  color: #e45826;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+div:has(> .capatcha-box) {
+  max-height: 70px;
+}
+
+.btn-main {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #e45826;
+  --bs-btn-border-color: #e45826;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #e45826;
+  --bs-btn-hover-border-color: #e45826;
+}
+
+form .btn-main {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input {
+  font-size: 20px;
+  padding-block: 12px !important;
+}
+
+.border-main {
+  border: 2px solid #e45826;
+}
+
+.border-main:focus {
+  box-shadow: none;
+  border: 2px solid #e45826;
+}
+
+.capatcha-text {
+  font-size: 1.8rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 25px;
+  background-image: url("https://30daysofjs.netlify.app/97%20-%20captcha%20generator/assets/bg6.png");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 992px) {
+  .wrapper > div {
+    width: 60% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper > div {
+    width: 75% !important;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .wrapper > div {
+    width: 100% !important;
+  }
+     
+}
